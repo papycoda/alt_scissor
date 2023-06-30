@@ -35,6 +35,6 @@ rich==13.4.2
 SQLAlchemy==2.0.16
 typing_extensions==4.6.3
 urllib3==2.0.3
-Werkzeug==2.3.6
+Werkzeug
 wrapt==1.15.0
 zipp==3.15.0
