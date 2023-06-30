@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% block title %}About{% endblock title %}
+
+{% block content %}
+<section class="container">
+  {% if current_user.is_authenticated %}
+  <h2> Hi {{ current_user.username }}!, Welcome to Scissor, </h2>
+  {% else %}
+  <h2>Welcome to Scissor! </span></h2>
+  {% endif %}
+    
+  <h3>"Who wants Super long links, defenitely not you, Rockstar"</h3>
+
+  <p>So let's help you convert those boring long URLs into easily sharable QR codes and short, custom links</p>
+</section>
+{% endblock content %}
