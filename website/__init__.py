@@ -40,6 +40,7 @@ from . import routes
 from .models import User
 
 @login_manager.user_loader
+#lambda user_id: User.query.get(user_id)
 def load_user(user_id):
     return User.query.get(user_id)
 
